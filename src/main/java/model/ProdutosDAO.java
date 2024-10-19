@@ -15,6 +15,7 @@ public ProdutosDAO() throws Exception{
 		String sql = "DELETE FROM produtos WHERE id=?";
 		pst = conn.prepareStatement(sql);
 		pst.setInt(1, p.getidPro());
+		pst.execute();
 	}
 	
 	//METODO LISTAR

@@ -15,6 +15,7 @@ public class ServicosDAO extends DataBaseDAO {
 		String sql = "DELETE FROM servicos WHERE id=?";
 		pst = conn.prepareStatement(sql);
 		pst.setInt(1, s.getidSer());
+		pst.execute();
 	}
 	
 	//METODO LISTAR
