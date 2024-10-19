@@ -1,7 +1,7 @@
 package Model;
 
 public class Servicos {
-	private id idser;
+	private int idser;
 	private String nome;
 	private double valor;
 	
@@ -10,37 +10,39 @@ public class Servicos {
 		super();
 		
 	}
-	
-	//CONSTRUTOR DE OBJETO
-	public Servicos(id idser, String nome, double valor) {
+
+	//CONSTRUTOR DO OBJETO
+	public Servicos(int idser, String nome, double valor) {
 		super();
 		this.idser = idser;
 		this.nome = nome;
 		this.valor = valor;
 	}
-	
-	//GETTERS E SETTERS
-	public id getIdser() {
+
+	public int getIdser() {
 		return idser;
 	}
 
-
-	public void setIdser(id idser) {
+	public void setIdser(int idser) {
 		this.idser = idser;
 	}
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public double getValor() {
 		return valor;
 	}
+
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
+
 	
 	
 }
